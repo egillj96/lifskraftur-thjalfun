@@ -261,6 +261,7 @@ export default function LifskrafturLandingPage() {
                 src="/coach.jpg"
                 alt="Egill Þór Jóhannsson"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
               />
             </div>
@@ -290,7 +291,7 @@ export default function LifskrafturLandingPage() {
 
               <p>
                 Í dag hjálpa ég mönnum að losna við ringulreiðina sem fylgir oft
-                nýjum lífsstíl og byggja upp styrk, betri venjur og meiri
+                nýjum lífsstíl og að byggja upp styrk, betri venjur og meiri
                 sjálfsvirðingu með skýru og raunhæfu kerfi.
               </p>
             </div>

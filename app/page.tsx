@@ -1,7 +1,4 @@
-"use client";
-
 import React from "react";
-import { motion } from "framer-motion";
 import { Playfair_Display, Inter } from "next/font/google";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -17,12 +14,14 @@ import Image from "next/image";
 
 const display = Playfair_Display({
   subsets: ["latin"],
-  weight: ["500", "600", "700"],
+  weight: ["600", "700"],
+  display: "swap",
 });
 
 const body = Inter({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "600"],
+  display: "swap",
 });
 
 type FeatureCardProps = {
@@ -99,11 +98,7 @@ export default function LifskrafturLandingPage() {
         className="relative overflow-hidden px-6 pt-12 pb-20 md:px-12 lg:px-20"
       >
         <div className="mx-auto grid max-w-6xl items-center gap-12 py-20 md:grid-cols-2 md:py-28">
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-          >
+          <div>
             <p className="mb-5 inline-flex rounded-full border border-[var(--border-gold-strong)] bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-[var(--sand)] shadow-sm">
               Hraustur líkami. Skýr hugur. Einföld rútína.
             </p>
@@ -138,14 +133,9 @@ export default function LifskrafturLandingPage() {
                 <a href="#thjonusta">Sjá þjónustu</a>
               </Button>
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div
-            initial={{ opacity: 0, scale: 0.96 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7, delay: 0.15 }}
-            className="rounded-[2.5rem] bg-[var(--black)] p-8 text-[var(--white)] shadow-2xl"
-          >
+          <div className="rounded-[2.5rem] bg-[var(--black)] p-8 text-[var(--white)] shadow-2xl">
             <div className="rounded-[2rem] border border-[var(--border-gold-strong)] bg-[var(--forest)]/40 p-7">
               <p className="text-xs uppercase tracking-[0.3em] text-[var(--gold)]">
                 Lífskraftur kerfið
@@ -171,7 +161,7 @@ export default function LifskrafturLandingPage() {
                 ))}
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -258,9 +248,10 @@ export default function LifskrafturLandingPage() {
           <div className="relative">
             <div className="relative aspect-[4/5] overflow-hidden rounded-[2.5rem] border border-[var(--border-gold)] shadow-2xl">
               <Image
-                src="/coach.jpg"
+                src="/coach.webp"
                 alt="Egill Þór Jóhannsson"
                 fill
+                quality={70}
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
               />

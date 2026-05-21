@@ -13,6 +13,7 @@ import {
   Sparkles,
   CheckCircle2,
 } from "lucide-react";
+import Image from "next/image";
 
 const display = Playfair_Display({
   subsets: ["latin"],
@@ -248,6 +249,51 @@ export default function LifskrafturLandingPage() {
               title="Við höldum þér á réttri braut"
               text="Regluleg eftirfylgni, aðlögun og stuðningur þegar þarf."
             />
+          </div>
+        </div>
+      </section>
+
+      <section className="px-6 py-20 md:px-12 lg:px-20">
+        <div className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
+          <div className="relative">
+            <div className="relative aspect-[4/5] overflow-hidden rounded-[2.5rem] border border-[var(--border-gold)] shadow-2xl">
+              <Image
+                src="/coach.jpg"
+                alt="Egill Þór Jóhannsson"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[var(--sand)]">
+              Um mig
+            </p>
+
+            <h2
+              className={`${display.className} mt-3 text-5xl font-semibold tracking-tight`}
+            >
+              Egill Þór Jóhannsson
+            </h2>
+
+            <div className="mt-6 space-y-6 text-lg leading-8 text-[var(--foreground)]/70">
+              <p>
+                Ég er menntaður tölvunarfræðingur og einkaþjálfari með mikinn
+                áhuga á líkamsrækt, næringu og heilbrigðum lífsstíl.
+              </p>
+
+              <p>
+                Ég hef prófað margar aðferðir í gegnum árin, gengið of langt,
+                brunnið út og smám saman þróað einfaldari og sjálfbærari nálgun.
+              </p>
+
+              <p>
+                Í dag hjálpa ég mönnum að losna við ringulreiðina sem fylgir oft
+                nýjum lífsstíl og byggja upp styrk, betri venjur og meiri
+                sjálfsvirðingu með skýru og raunhæfu kerfi.
+              </p>
+            </div>
           </div>
         </div>
       </section>

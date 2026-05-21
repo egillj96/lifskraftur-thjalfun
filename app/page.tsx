@@ -165,7 +165,7 @@ export default function LifskrafturLandingPage() {
                   "Eftirfylgni og aðhald",
                 ].map((item) => (
                   <div key={item} className="flex items-center gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-[var(--gold)]" />
+                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[var(--gold)]" />{" "}
                     <span className="text-[var(--white)]/85">{item}</span>
                   </div>
                 ))}
@@ -195,7 +195,7 @@ export default function LifskrafturLandingPage() {
           <div className="mt-12 grid items-stretch gap-6 md:grid-cols-3">
             <FeatureCard
               icon={<Dumbbell className="h-6 w-6" />}
-              title="Styrktarþjálfun"
+              title="Þjálfun"
               text="Æfingar sem byggja vöðva, líkamsstöðu, styrk og sjálfstraust."
             />
             <FeatureCard
@@ -226,7 +226,7 @@ export default function LifskrafturLandingPage() {
             </h2>
 
             <p className="mt-5 text-lg leading-8 text-[var(--foreground)]/70">
-              Fyrir menn sem vilja koma sér aftur á rétta braut með skýrari
+              Fyrir menn sem vilja koma sér aftur á rétta braut með einfaldri
               rútínu, betri heilsu og meiri stjórn á daglegu lífi.
             </p>
           </div>
@@ -247,7 +247,7 @@ export default function LifskrafturLandingPage() {
             <Step
               number="03"
               title="Við höldum þér á réttri braut"
-              text="Regluleg eftirfylgni, aðlögun og stuðningur þegar þarf."
+              text="Regluleg eftirfylgni, aðlögun og stuðningur."
             />
           </div>
         </div>

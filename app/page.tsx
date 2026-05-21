@@ -73,7 +73,7 @@ export default function LifskrafturLandingPage() {
               href="#thjonusta"
               className="transition hover:text-[var(--gold)]"
             >
-              Þjónusta
+              Þjónustan
             </a>
             <a href="#ferlid" className="transition hover:text-[var(--gold)]">
               Ferlið

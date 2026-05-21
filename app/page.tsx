@@ -86,7 +86,9 @@ export default function LifskrafturLandingPage() {
             className="rounded-full bg-[var(--black)] px-6 text-[var(--white)] shadow-lg transition-all duration-300 ease-out hover:-translate-y-1 hover:bg-[var(--gold)] hover:text-[var(--white)] hover:shadow-2xl"
             asChild
           >
-            <a href="#samtal">Bóka fund</a>
+            <a href="https://forms.gle/oLvRj2G36zMtDkBg6" target="_blank">
+              Bóka fund
+            </a>
           </Button>
         </nav>
       </header>
@@ -102,18 +104,19 @@ export default function LifskrafturLandingPage() {
             transition={{ duration: 0.7 }}
           >
             <p className="mb-5 inline-flex rounded-full border border-[var(--border-gold-strong)] bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-[var(--sand)] shadow-sm">
-              Sönn íslensk heilsa
+              Hraustur líkami. Skýr hugur. Einföld rútína.
             </p>
 
             <h1
               className={`${display.className} text-6xl font-semibold leading-[0.95] tracking-tight md:text-7xl`}
             >
-              Byggðu styrk, aga og sjálfsvirðingu.
+              Byggðu styrk, ró og sjálfsvirðingu.
             </h1>
 
             <p className="mt-7 max-w-xl text-lg leading-8 text-[var(--foreground)]/70">
-              Lífskraftur hjálpar mönnum að byggja upp styrk, aga og
-              sjálfstraust með einföldu kerfi í þjálfun, næringu og lífsstíl.
+              Lífskraftur hjálpar mönnum að byggja upp hraustan líkama, rólegra
+              taugakerfi og sjálfstraust með einföldu kerfi í þjálfun, næringu
+              og lífsstíl.
             </p>
 
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -150,7 +153,7 @@ export default function LifskrafturLandingPage() {
               <h2
                 className={`${display.className} mt-5 text-4xl font-semibold`}
               >
-                Skýrt og einfalt kerfi - alvöru árangur.
+                Skýrt og einfalt kerfi - langvarandi árangur.
               </h2>
 
               <div className="mt-8 space-y-5">
@@ -218,11 +221,12 @@ export default function LifskrafturLandingPage() {
             <h2
               className={`${display.className} mt-3 text-5xl font-semibold tracking-tight`}
             >
-              Fyrir menn sem vilja byrja af krafti.
+              Fyrir menn sem vilja verða sterkari, rólegri og agaðri — án öfga.
             </h2>
 
             <p className="mt-5 text-lg leading-8 text-[var(--foreground)]/70">
-              Fyrir byrjendur eða menn sem hafa misst taktinn.
+              Fyrir menn sem vilja koma sér aftur á rétta braut með skýrari
+              rútínu, betri heilsu og meiri stjórn á daglegu lífi.
             </p>
           </div>
 
@@ -230,17 +234,19 @@ export default function LifskrafturLandingPage() {
             <Step
               number="01"
               title="Við förum yfir stöðuna"
-              text="Markmið, venjur og hvað hefur stoppað þig."
+              text="Markmið, venjur og hvað hefur haldið aftur af þér hingað til."
             />
+
             <Step
               number="02"
-              title="Við setjum upp kerfið"
-              text="Æfingar, næring og daglegar venjur."
+              title="Við setjum upp skýrt kerfi"
+              text="Æfingar, næring og venjur sem passa inn í raunverulegt líf."
             />
+
             <Step
               number="03"
-              title="Við stillum af"
-              text="Endurgjöf og lagfæringar í hverri viku."
+              title="Við höldum þér á réttri braut"
+              text="Regluleg eftirfylgni, aðlögun og stuðningur þegar þarf."
             />
           </div>
         </div>
@@ -255,31 +261,40 @@ export default function LifskrafturLandingPage() {
           <div className="mt-12 grid items-stretch gap-6 text-left md:grid-cols-3">
             <PriceCard
               title="Lífskraftur Silfur"
-              price="29.990 kr. / mán"
-              description="Skýr byrjun."
-              items={["Æfingaplan", "Næringarplan", "Skilaboð"]}
+              price="29.900 kr. / mán"
+              description="Skýrt plan og öflug byrjun."
+              items={[
+                "Aðgangur að appi",
+                "Æfingaplan",
+                "Næringarplan",
+                "Samskipti með skilaboðum",
+              ]}
             />
+
             <PriceCard
               title="Lífskraftur Gull"
-              price="49.990 kr. / mán"
-              description="Persónuleg leiðsögn."
+              price="49.900 kr. / mán"
+              description="Meiri leiðsögn og vikulegt aðhald."
               highlighted
               items={[
+                "Allt í Silfur",
                 "Sérsniðið æfingaplan",
                 "Næringarleiðsögn",
-                "Vikulegur fundur",
+                "Vikulegur fjarfundur",
                 "Aðlögun og eftirfylgni",
               ]}
             />
+
             <PriceCard
-              title="Lífskraftur Platínum"
-              price="149.990 kr. / mán"
-              description="Dýpri vinna og meiri ábyrgð."
+              title="Lífskraftur Platína"
+              price="99.900 kr. / mán"
+              description="Nánari stuðningur og meiri ábyrgð."
               items={[
-                "Dagleg eftirfylgni",
-                "Forgangur í samskiptum",
-                "Dýpri sjálfsmyndarvinna",
-                "Ítarlegri lífsstílsaðlögun",
+                "Allt í Gull",
+                "Tíðari samskipti",
+                "Forgangur í svörum",
+                "Ítarlegri aðlögun að rútínu og lífsstíl",
+                "Persónulegri stuðningur",
               ]}
             />
           </div>
@@ -305,9 +320,9 @@ export default function LifskrafturLandingPage() {
             className="mt-8 rounded-full bg-[var(--gold)] px-8 py-6 text-base text-[var(--foreground)] shadow-xl shadow-black/20 transition-all duration-300 ease-out hover:-translate-y-1 hover:bg-[var(--gold-dark)] hover:text-[var(--white)] hover:shadow-2xl"
             asChild
           >
-            <a href="#samtal">
+            <a href="https://forms.gle/oLvRj2G36zMtDkBg6" target="_blank">
               <MessageCircle className="mr-2 h-5 w-5" />
-              Bóka ókeypis fund
+              Bóka frían fund
             </a>
           </Button>
         </div>

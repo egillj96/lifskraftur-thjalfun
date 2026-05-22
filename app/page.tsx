@@ -4,11 +4,11 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Dumbbell,
-  HeartPulse,
   Leaf,
   MessageCircle,
   Sparkles,
   CheckCircle2,
+  ClipboardCheck,
 } from "lucide-react";
 import Image from "next/image";
 
@@ -106,7 +106,7 @@ export default function LifskrafturLandingPage() {
             <h1
               className={`${display.className} text-6xl font-semibold leading-[0.95] tracking-tight md:text-7xl`}
             >
-              Byggðu styrk, ró og sjálfsvirðingu.
+              Byggðu styrk, skýrleika og sjálfsvirðingu.
             </h1>
 
             <p className="mt-7 max-w-xl text-lg leading-8 text-[var(--foreground)]/70">
@@ -149,7 +149,7 @@ export default function LifskrafturLandingPage() {
 
               <div className="mt-8 space-y-5">
                 {[
-                  "Styrktaræfingar sem byggja vöðva og sjálfstraust",
+                  "Þjálfun sem byggir vöðva og sjálfstraust",
                   "Einföld næring án öfga",
                   "Daglegar venjur sem halda þér á réttri braut",
                   "Eftirfylgni og aðhald",
@@ -186,17 +186,19 @@ export default function LifskrafturLandingPage() {
             <FeatureCard
               icon={<Dumbbell className="h-6 w-6" />}
               title="Þjálfun"
-              text="Æfingar sem byggja vöðva, líkamsstöðu, styrk og sjálfstraust."
+              text="Æfingar sem byggja vöðva, góða líkamsstöðu, styrk og sjálfstraust."
             />
+
             <FeatureCard
               icon={<Leaf className="h-6 w-6" />}
               title="Næring"
               text="Einfalt mataræði sem styður orku, meltingu og árangur."
             />
+
             <FeatureCard
-              icon={<HeartPulse className="h-6 w-6" />}
-              title="Endurheimt"
-              text="Svefn, streitustjórnun og rólegra taugakerfi."
+              icon={<ClipboardCheck className="h-6 w-6" />}
+              title="Aðhald og eftirfylgni"
+              text="Regluleg eftirfylgni og skýrt aðhald sem hjálpar þér að halda þig við planið."
             />
           </div>
         </div>
@@ -212,7 +214,7 @@ export default function LifskrafturLandingPage() {
             <h2
               className={`${display.className} mt-3 text-5xl font-semibold tracking-tight`}
             >
-              Fyrir menn sem vilja verða sterkari, rólegri og agaðri — án öfga.
+              Fyrir menn sem vilja verða sterkari, skýrari og agaðri — án öfga.
             </h2>
 
             <p className="mt-5 text-lg leading-8 text-[var(--foreground)]/70">
@@ -237,7 +239,7 @@ export default function LifskrafturLandingPage() {
             <Step
               number="03"
               title="Við höldum þér á réttri braut"
-              text="Regluleg eftirfylgni, aðlögun og stuðningur."
+              text="Regluleg eftirfylgni, aðhald og stuðningur."
             />
           </div>
         </div>

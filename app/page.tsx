@@ -110,7 +110,7 @@ export default function LifskrafturLandingPage() {
             </h1>
 
             <p className="mt-7 max-w-xl text-lg leading-8 text-[var(--foreground)]/70">
-              Lífskraftur hjálpar mönnum að byggja upp hraustan líkama, rólegra
+              Lífskraftur hjálpar mönnum að byggja upp hraustan líkama, stöðugra
               taugakerfi og sjálfstraust með einföldu kerfi í þjálfun, næringu
               og lífsstíl.
             </p>
@@ -216,8 +216,8 @@ export default function LifskrafturLandingPage() {
             </h2>
 
             <p className="mt-5 text-lg leading-8 text-[var(--foreground)]/70">
-              Fyrir menn sem vilja koma sér aftur á rétta braut með einfaldri
-              rútínu, betri heilsu og meiri stjórn á daglegu lífi.
+              Fyrir menn sem vilja koma sér á rétta braut með einfaldri rútínu,
+              betri heilsu og meiri stjórn á daglegu lífi.
             </p>
           </div>
 
@@ -329,7 +329,7 @@ export default function LifskrafturLandingPage() {
               description="Nánari stuðningur og meiri ábyrgð."
               items={[
                 "Allt í Gull",
-                "Tíðari samskipti",
+                "Dagleg samskipti",
                 "Forgangur í svörum",
                 "Ítarlegri aðlögun að rútínu og lífsstíl",
                 "Persónulegri stuðningur",

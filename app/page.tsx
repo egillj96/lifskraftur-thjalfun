@@ -42,6 +42,7 @@ type PriceCardProps = {
   description: string;
   items: string[];
   highlighted?: boolean;
+  badge?: string;
 };
 
 export default function LifskrafturLandingPage() {
@@ -253,7 +254,7 @@ export default function LifskrafturLandingPage() {
                 src="/coach.webp"
                 alt="Egill Þór Jóhannsson"
                 fill
-                quality={70}
+                quality={75}
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
               />
@@ -298,11 +299,12 @@ export default function LifskrafturLandingPage() {
             Verðskrá
           </p>
 
-          <div className="mt-12 grid items-stretch gap-6 text-left md:grid-cols-3">
+          <div className="mt-12 grid max-w-4xl mx-auto items-stretch gap-6 text-left md:grid-cols-2">
+            {" "}
             <PriceCard
-              title="Lífskraftur Silfur"
-              price="29.900 kr. / mán"
-              description="Skýrt plan og öflug byrjun."
+              title="Lífskraftur Grunnur"
+              price="24.900 kr. / mán"
+              description="Fyrir þá sem vilja skýrt plan og sjálfstæði."
               items={[
                 "Aðgangur að appi",
                 "Æfingaplan",
@@ -310,31 +312,18 @@ export default function LifskrafturLandingPage() {
                 "Samskipti með skilaboðum",
               ]}
             />
-
             <PriceCard
-              title="Lífskraftur Gull"
-              price="49.900 kr. / mán"
-              description="Meiri leiðsögn og vikulegt aðhald."
+              title="Lífskraftur Þjálfun"
+              price="39.900 kr. / mán"
+              description="Fyrir þá sem vilja meiri leiðsögn og vikulegt aðhald."
+              badge="Vinsælasti pakkinn"
               highlighted
               items={[
-                "Allt í Silfur",
-                "Sérsniðið æfingaplan",
-                "Næringarleiðsögn",
+                "Allt í Grunnur",
                 "Vikulegur fjarfundur",
+                "Sérsniðið æfingaplan",
+                "Persónuleg næringarleiðsögn",
                 "Aðlögun og eftirfylgni",
-              ]}
-            />
-
-            <PriceCard
-              title="Lífskraftur Platína"
-              price="99.900 kr. / mán"
-              description="Nánari stuðningur og meiri ábyrgð."
-              items={[
-                "Allt í Gull",
-                "Dagleg samskipti",
-                "Forgangur í svörum",
-                "Ítarlegri aðlögun að rútínu og lífsstíl",
-                "Persónulegri stuðningur",
               ]}
             />
           </div>
@@ -411,6 +400,7 @@ function PriceCard({
   description,
   items,
   highlighted = false,
+  badge,
 }: PriceCardProps) {
   return (
     <Card
@@ -421,8 +411,16 @@ function PriceCard({
       }`}
     >
       <CardContent className="flex h-full flex-col p-8">
+        {badge && (
+          <div className="mb-6">
+            <span className="inline-flex items-center gap-2 rounded-full border border-[var(--gold)]/40 bg-[var(--gold)]/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--gold)]">
+              <Sparkles className="h-3 w-3" />
+              {badge}
+            </span>
+          </div>
+        )}
         <h3
-          className={`${display.className} min-h-[76px] text-3xl font-semibold`}
+          className={`${display.className} min-h-[60px] text-3xl font-semibold`}
         >
           {title}
         </h3>

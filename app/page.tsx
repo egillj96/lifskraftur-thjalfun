@@ -410,23 +410,20 @@ function PriceCard({
           : "border-[var(--border-gold)] bg-white text-[var(--foreground)] shadow-black/5"
       }`}
     >
-      <CardContent className="flex h-full flex-col p-8">
+      <CardContent className="relative flex h-full flex-col p-8">
         {badge && (
-          <div className="mb-6">
-            <span className="inline-flex items-center gap-2 rounded-full border border-[var(--gold)]/40 bg-[var(--gold)]/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--gold)]">
-              <Sparkles className="h-3 w-3" />
-              {badge}
-            </span>
-          </div>
+          <span className="absolute right-8 top-1 inline-flex items-center gap-2 rounded-full border border-[var(--gold)]/40 bg-[var(--gold)]/10 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.2em] text-[var(--gold)]">
+            <Sparkles className="h-3 w-3" />
+            {badge}
+          </span>
         )}
-        <h3
-          className={`${display.className} min-h-[60px] text-3xl font-semibold`}
-        >
+
+        <h3 className={`${display.className} text-3xl font-semibold mt-6`}>
           {title}
         </h3>
 
         <p
-          className={`mt-3 min-h-[56px] leading-7 ${
+          className={`mt-6 max-w-md leading-7 ${
             highlighted
               ? "text-[var(--white)]/75"
               : "text-[var(--foreground)]/65"
@@ -436,7 +433,7 @@ function PriceCard({
         </p>
 
         <div
-          className={`${display.className} mt-6 min-h-[50px] text-4xl font-semibold text-[var(--gold)]`}
+          className={`${display.className} mt-12 text-4xl font-semibold text-[var(--gold)]`}
         >
           {price}
         </div>

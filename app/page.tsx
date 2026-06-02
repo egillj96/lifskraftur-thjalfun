@@ -323,7 +323,7 @@ export default function LifskrafturLandingPage() {
                 "Vikulegur fjarfundur",
                 "Sérsniðið æfingaplan",
                 "Persónuleg næringarleiðsögn",
-                "Aðlögun og eftirfylgni",
+                "Aðhald og eftirfylgni",
               ]}
             />
           </div>

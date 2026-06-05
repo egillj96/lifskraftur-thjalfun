@@ -60,7 +60,7 @@ export default function LifskrafturLandingPage() {
                 Lífskraftur
               </div>
               <div className="text-xs uppercase tracking-[0.22em] text-[var(--sand)]">
-                Heilsu- og lífsstílsþjálfun
+                Fjarþjálfun fyrir granna karlmenn
               </div>
             </div>
           </a>
@@ -101,7 +101,7 @@ export default function LifskrafturLandingPage() {
         <div className="mx-auto grid max-w-6xl items-center gap-12 py-20 md:grid-cols-2 md:py-28">
           <div>
             <p className="mb-5 inline-flex rounded-full border border-[var(--border-gold-strong)] bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-[var(--sand)] shadow-sm">
-              Hraustur líkami. Skýr hugur. Einföld rútína.
+              Hraustur líkami. Skýr hugur. Einfalt kerfi.
             </p>
 
             <h1
@@ -111,9 +111,8 @@ export default function LifskrafturLandingPage() {
             </h1>
 
             <p className="mt-7 max-w-xl text-lg leading-8 text-[var(--foreground)]/70">
-              Lífskraftur hjálpar mönnum að byggja upp hraustan líkama, stöðugra
-              taugakerfi og sjálfstraust með einföldu kerfi í þjálfun, næringu
-              og lífsstíl.
+              Lífskraftur hjálpar grönnum karlmönnum að byggja vöðva og styrk
+              með einföldu kerfi sem passar inn í raunverulegt líf.
             </p>
 
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -215,7 +214,7 @@ export default function LifskrafturLandingPage() {
             <h2
               className={`${display.className} mt-3 text-5xl font-semibold tracking-tight`}
             >
-              Fyrir menn sem vilja verða sterkari, skýrari og agaðri — án öfga.
+              Fyrir granna karlmenn sem vilja byggja vöðva og styrk — án öfga.
             </h2>
 
             <p className="mt-5 text-lg leading-8 text-[var(--foreground)]/70">
@@ -284,9 +283,8 @@ export default function LifskrafturLandingPage() {
               </p>
 
               <p>
-                Í dag hjálpa ég mönnum að losna við ringulreiðina sem fylgir oft
-                nýjum lífsstíl og að byggja upp styrk, betri venjur og meiri
-                sjálfsvirðingu með skýru og raunhæfu kerfi.
+                Í dag hjálpa ég grönnum karlmönnum að byggja sig upp með skýru
+                og raunhæfu kerfi.
               </p>
             </div>
           </div>

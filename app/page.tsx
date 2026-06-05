@@ -60,7 +60,7 @@ export default function LifskrafturLandingPage() {
                 Lífskraftur
               </div>
               <div className="text-xs uppercase tracking-[0.22em] text-[var(--sand)]">
-                Fjarþjálfun fyrir granna karlmenn
+                Heilsa, styrkur, hugarfar
               </div>
             </div>
           </a>
@@ -111,8 +111,9 @@ export default function LifskrafturLandingPage() {
             </h1>
 
             <p className="mt-7 max-w-xl text-lg leading-8 text-[var(--foreground)]/70">
-              Lífskraftur hjálpar grönnum karlmönnum að byggja vöðva og styrk
-              með einföldu kerfi sem passar inn í raunverulegt líf.
+              Lífskraftur hjálpar mönnum að byggja upp hraustan líkama,
+              heilbrigðar venjur og meira sjálfstraust með einföldu kerfi sem
+              hentar raunverulegu lífi.
             </p>
 
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -149,7 +150,7 @@ export default function LifskrafturLandingPage() {
 
               <div className="mt-8 space-y-5">
                 {[
-                  "Þjálfun sem byggir vöðva og sjálfstraust",
+                  "Þjálfun sem byggir styrk og sjálfstraust",
                   "Einföld næring án öfga",
                   "Daglegar venjur sem halda þér á réttri braut",
                   "Eftirfylgni og aðhald",
@@ -192,7 +193,7 @@ export default function LifskrafturLandingPage() {
             <FeatureCard
               icon={<Leaf className="h-6 w-6" />}
               title="Næring"
-              text="Einfalt mataræði sem styður orku, meltingu og árangur."
+              text="Einfalt mataræði sem styður endurheimt, meltingu og árangur."
             />
 
             <FeatureCard
@@ -214,7 +215,7 @@ export default function LifskrafturLandingPage() {
             <h2
               className={`${display.className} mt-3 text-5xl font-semibold tracking-tight`}
             >
-              Fyrir granna karlmenn sem vilja byggja vöðva og styrk — án öfga.
+              Fyrir menn sem vilja byggja sig upp og taka lífsstílinn í gegn.
             </h2>
 
             <p className="mt-5 text-lg leading-8 text-[var(--foreground)]/70">
@@ -283,8 +284,8 @@ export default function LifskrafturLandingPage() {
               </p>
 
               <p>
-                Í dag hjálpa ég grönnum karlmönnum að byggja sig upp með skýru
-                og raunhæfu kerfi.
+                Í dag hjálpa ég mönnum að byggja upp heilsu, styrk og sjálfbærar
+                venjur með skýru og einföldu kerfi.
               </p>
             </div>
           </div>

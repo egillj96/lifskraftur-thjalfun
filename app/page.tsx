@@ -107,7 +107,7 @@ export default function LifskrafturLandingPage() {
             <h1
               className={`${display.className} text-6xl font-semibold leading-[0.95] tracking-tight md:text-7xl`}
             >
-              Byggðu styrk, skýrleika og sjálfsvirðingu.
+              Byggðu styrk, orku og sjálfsvirðingu.
             </h1>
 
             <p className="mt-7 max-w-xl text-lg leading-8 text-[var(--foreground)]/70">
